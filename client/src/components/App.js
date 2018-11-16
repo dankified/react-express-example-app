@@ -1,6 +1,6 @@
 //Import dependencies
 import React from 'react';
-import AnimalList from './AnimalList';
+import BreweriesList from '.BreweriesList';
 import axios from 'axios';
 
 class App extends React.Component {
@@ -11,14 +11,14 @@ class App extends React.Component {
 		//Set the state object with one property animalList that
 		//by default will be assigned an empty array
 		this.state = {
-			animalList: []
+			breweriesList: []
 		}
-		this.updateAnimalList = this.updateAnimalList.bind(this);
+		this.updateBreweriesList = this.BreweriesList.bind(this);
 	}
 
-	updateAnimalList(animalList) {
-		console.log(animalList);
-		this.setState({animalList});
+	updateAnimalList(breweriesList) {
+		console.log(breweriesList);
+		this.setState({breweriesList});
 	}
 	
 	componentDidMount() {

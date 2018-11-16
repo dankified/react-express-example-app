@@ -25,4 +25,3 @@ class Root extends React.Component {
 
 render(<Root />, document.getElementById('root'));
 
-let j = "josh"
