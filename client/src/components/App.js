@@ -16,7 +16,7 @@ class App extends React.Component {
 		this.updateBreweriesList = this.BreweriesList.bind(this);
 	}
 
-	updateAnimalList(breweriesList) {
+	updateBreweriesList(breweriesList) {
 		console.log(breweriesList);
 		this.setState({breweriesList});
 	}
