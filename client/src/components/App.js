@@ -1,8 +1,8 @@
 //Import dependencies
 import React from 'react';
-import BreweriesList from '.BreweriesList';
-import Slideshow from './slideshow';
-import SearchBar from './searchBar';
+// import BreweriesList from '.BreweriesList';
+//import Slideshow from './slideshow';
+// import SearchBar from './searchBar';
 import axios from 'axios';
 
 class App extends React.Component {
@@ -15,7 +15,7 @@ class App extends React.Component {
 		this.state = {
 			breweriesList: []
 		}
-		this.updateBreweriesList = this.BreweriesList.bind(this);
+		this.updateBreweriesList = this.updateBreweriesList.bind(this);
 	}
 
 	updateBreweriesList(breweriesList) {
@@ -23,11 +23,11 @@ class App extends React.Component {
 		this.setState({breweriesList});
 	}
 	
-	componentDidMount() {
-		axios.get('/animals').then((data) => {
-			this.updateAnimalList(data.data.data);
-		})
-	}
+	// componentDidMount() {
+	// 	axios.get('/animals').then((data) => {
+	// 		this.updateAnimalList(data.data.data);
+	// 	})
+	// }
 
 	//Render jsx
 	render() {
@@ -36,7 +36,7 @@ class App extends React.Component {
 			//animalList state property
 			<div>
 				
-				<AnimalList list={this.state.animalList} />
+				{/* <AnimalList list={this.state.animalList} /> */}
 			</div>
 		)
 	}
