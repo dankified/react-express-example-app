@@ -1,5 +1,6 @@
 //Import dependencies
 import React from 'react';
+import AnimalList from './AnimalList';
 
 class App extends React.Component {
 	//Define constructor function to be able to define state
@@ -22,3 +23,5 @@ class App extends React.Component {
 		)
 	}
 }
+
+export default App;
