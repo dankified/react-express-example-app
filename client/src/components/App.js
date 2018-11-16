@@ -1,6 +1,7 @@
 //Import dependencies
 import React from 'react';
 import AnimalList from './AnimalList';
+import axios from 'axios';
 
 class App extends React.Component {
 	//Define constructor function to be able to define state
@@ -12,8 +13,20 @@ class App extends React.Component {
 		this.state = {
 			animalList: []
 		}
+		this.updateAnimalList = this.updateAnimalList.bind(this);
+	}
+
+	updateAnimalList(animalList) {
+		console.log(animalList);
+		this.setState({animalList});
 	}
 	
+	componentDidMount() {
+		axios.get('/animals').then((data) => {
+			this.updateAnimalList(data.data.data);
+		})
+	}
+
 	//Render jsx
 	render() {
 		return (

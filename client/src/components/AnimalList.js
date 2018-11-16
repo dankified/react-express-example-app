@@ -6,7 +6,7 @@ class AnimalList extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div id="animal-list">
 				{this.props.list.map((el) => {
 					return (
 						<div>
