@@ -33,7 +33,7 @@ class App extends React.Component {
 			// Render AnimalList component with list prop equals to
 			//animalList state property
 			<div>
-				<h1>The Animal List App!</h1>
+				
 				<AnimalList list={this.state.animalList} />
 			</div>
 		)
