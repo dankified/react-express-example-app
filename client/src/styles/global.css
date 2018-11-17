@@ -4,21 +4,68 @@
 	padding: 0;
 	font-family: 'Courier New', Courier, monospace;
 }
+body {
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a3/Wall_Food_10489_%2815825300172%29.jpg')
+
+}
+button {
+	padding: .35rem;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	
+}
+input {
+	padding: 2.5px;
+	margin-right: 10px;
+}
+
+
 
 #animal-list {
 	display: flex;
 	justify-content: space-evenly;
 }
 
-h1 {
-	color: maroon;
+#titlebox h1 {
+	color: rgb(216, 153, 17);
 	text-align: center;
-	margin: 3rem 0;
+	/* margin: 5rem 0; */
+	padding-top: 2.5rem;	
 }
+#slogan h3 {
+	color: rgb(216, 153, 17);
+	text-align: center;
+	/* margin: 5rem 0; */
+	padding-top: 2.5rem;	
+}
+
+.carousel h3, p {
+	/* color: rgb(216, 153, 17); */
+	text-align: center;
+}
+.carousel p {
+	font-weight: bold;
+	font-size: 1.1rem;
+	/* color: white; */
+	
+}
+
+
 header {
 	position: fixed;
 	top: 0;
-	margin: 30px 30px;
-	padding: 0 20px;
-	
+	margin: .5rem .5rem;
+	padding: 0;
+}
+#maincontainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* margin-top: 3rem; */
+}
+
+#searchbox{
+	margin-top: 2rem;
 }

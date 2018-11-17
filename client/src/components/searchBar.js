@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SearchBar = (props) => {
-  return(
+  return (
     <form onSubmit={props.getBrews}>
       <input name="city" placeholder="Beer is good!"></input>
       <button>Submit</button>
