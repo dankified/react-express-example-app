@@ -5,6 +5,7 @@ import Slideshow from './slideshow';
 // import SearchBar from './searchBar';
 import axios from 'axios';
 import SearchBar from "./searchBar.js";
+import Footer from "./footer.js"
 
 class App extends React.Component {
 	//Define constructor function to be able to define state
@@ -49,9 +50,7 @@ class App extends React.Component {
 			//animalList state property
 			<div id='maincontainer'>
 				<div id="titlebox">
-					<h1>
-						LocalBrew
-					</h1>
+					 <img id='logo' src="/logo.png" alt=""></img> 
 				</div>
 				<div id='slogan'>
 					<h3>Find Your Local Brewery!</h3>
@@ -63,6 +62,7 @@ class App extends React.Component {
 				<Slideshow />
 				{/* <AnimalList list={this.state.animalList} /> */}
 				</div>
+				<Footer />
 			</div>
 		)
 	}

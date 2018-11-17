@@ -4,10 +4,27 @@
 	padding: 0;
 	font-family: 'Courier New', Courier, monospace;
 }
-body {
-	background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a3/Wall_Food_10489_%2815825300172%29.jpg')
-
+#logo {
+	width: 20%;
+	height: 10%;
+	margin-top: 2.5rem;
+	margin-left: 30rem;
 }
+
+.parallax { 
+    /* The image used */
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a3/Wall_Food_10489_%2815825300172%29.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 button {
 	padding: .35rem;
 	border-radius: 50%;
@@ -40,6 +57,10 @@ input {
 	padding-top: 2.5rem;	
 }
 
+.carousel {
+	margin: 40px 0;
+}
+
 .carousel h3, p {
 	/* color: rgb(216, 153, 17); */
 	text-align: center;
@@ -68,4 +89,40 @@ header {
 
 #searchbox{
 	margin-top: 2rem;
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	height: 100px;
+	background-color: black;
+	width: 100%
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
 }
