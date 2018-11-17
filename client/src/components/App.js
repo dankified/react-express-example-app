@@ -5,6 +5,7 @@ import Slideshow from './slideshow';
 // import SearchBar from './searchBar';
 import axios from 'axios';
 import SearchBar from "./searchBar.js";
+
 import BreweriesList from './BreweriesList.js';
 
 class App extends React.Component {
