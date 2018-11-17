@@ -1,43 +1,70 @@
 //Import dependencies
 import React from 'react';
-import AnimalList from './AnimalList';
+// import BreweriesList from '.BreweriesList';
+import Slideshow from './slideshow';
+// import SearchBar from './searchBar';
 import axios from 'axios';
+import SearchBar from "./searchBar.js";
+import Footer from "./footer.js"
+
+import BreweriesList from './BreweriesList.js';
 
 class App extends React.Component {
 	//Define constructor function to be able to define state
 	constructor() {
 		//Call super to be able to set state
 		super();
-		//Set the state object with one property animalList that
-		//by default will be assigned an empty array
-		this.state = {
-			animalList: []
-		}
-		this.updateAnimalList = this.updateAnimalList.bind(this);
+
+		// this.state = {
+		// 	breweriesList: []
+		// }
+		this.updateBreweriesList = this.updateBreweriesList.bind(this);
 	}
 
-	updateAnimalList(animalList) {
-		console.log(animalList);
-		this.setState({animalList});
+	state = {
+		breweriesList: [],
+		hasList: false
 	}
-	
-	componentDidMount() {
-		axios.get('/animals').then((data) => {
-			this.updateAnimalList(data.data.data);
+
+	updateBreweriesList(breweriesList) {
+		console.log(breweriesList);
+		this.setState({breweriesList});
+	}
+
+	handleSubmit = (e) => {
+		e.preventDefault();
+		const city = e.target.elements.city.value;
+		axios.get(`https://api.openbrewerydb.org/breweries?by_city=${city}`)
+		.then((res) => {
+			let data = res.data;
+			this.setState({ breweriesList: data, hasList: true })
+			console.log(data)
 		})
 	}
-
 	//Render jsx
 	render() {
 		return (
-			// Render AnimalList component with list prop equals to
-			//animalList state property
-			<div>
-				<h1>The Animal List App!</h1>
-				<AnimalList list={this.state.animalList} />
+
+			<div id='maincontainer'>
+				<div id="titlebox">
+					 <img id='logo' src="/logo.png" alt=""></img> 
+				</div>
+				<div id='slogan'>
+					<h3>Find Your Local Brewery!</h3>
+				</div>
+				<div id='searchbox'>
+				<SearchBar getBrews={this.handleSubmit} />
+				</div>
+				<div>
+				<Slideshow />
+				{ this.state.hasList === false ? null : <BreweriesList breweriesList={this.state.breweriesList} /> }
+				</div>
+				<Footer />
 			</div>
 		)
 	}
 }
 
 export default App;
+
+// { this.state.breweriesList != [] && <BreweriesList breweries={this.state.breweriesList} /> }
