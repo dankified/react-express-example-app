@@ -5,6 +5,7 @@ import App from './components/App';
 import About from './components/About';
 import './styles/global.css';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
+// import 'semantic-ui-css/semantic.min.css';
 
 class Root extends React.Component {
 	render() {
@@ -24,4 +25,3 @@ class Root extends React.Component {
 }
 
 render(<Root />, document.getElementById('root'));
-

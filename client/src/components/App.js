@@ -4,6 +4,7 @@ import React from 'react';
 //import Slideshow from './slideshow';
 // import SearchBar from './searchBar';
 import axios from 'axios';
+import SearchBar from "./searchBar.js";
 
 class App extends React.Component {
 	//Define constructor function to be able to define state
@@ -22,7 +23,19 @@ class App extends React.Component {
 		console.log(breweriesList);
 		this.setState({breweriesList});
 	}
-	
+
+	handleSubmit = (e) => {
+		e.preventDefault();
+		const city = e.target.elements.city.value;
+		axios.get(`https://api.openbrewerydb.org/breweries?by_city=${city}`)
+		.then((res) => {
+			let data = res.data;
+			this.setState({ breweriesList: data })
+			console.log(data)
+		})
+
+	}
+
 	// componentDidMount() {
 	// 	axios.get('/animals').then((data) => {
 	// 		this.updateAnimalList(data.data.data);
@@ -35,7 +48,7 @@ class App extends React.Component {
 			// Render AnimalList component with list prop equals to
 			//animalList state property
 			<div>
-				
+				<SearchBar getBrews={this.handleSubmit} />
 				{/* <AnimalList list={this.state.animalList} /> */}
 			</div>
 		)
