@@ -1,19 +1,25 @@
 import React from 'react';
+// import { library } from "@fortawesome/fontawesome-svg-core";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faStroopwafel } from "@fortawesome/free-solid-svg-icons";
 
 
-const Footer =  (props) => {
+const Footer =  () => {
      
     return (
         <footer id="footer" >
-            <div class="social-letter">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
+            <div className="social-letter">
+                {/* <FontAwesomeIcon icon='facebook'/> */}
+                <i className="fab fa-facebook"></i>
+                <a href="http://twitter.com">
+                    <i className="fab fa-twitter fa-5x"></i>
+                </a>
             </div>
-            <div class="visit">
+            <div className="visit">
             </div>
-            <div class="calendar">                
+            <div className="calendar">                
             </div>
         </footer>)
 }
 
-export default Footer
+export default Footer;
