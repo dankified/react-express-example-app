@@ -7,17 +7,23 @@ import axios from 'axios';
 import SearchBar from "./searchBar.js";
 import Footer from "./footer.js"
 
+import BreweriesList from './BreweriesList.js';
+
 class App extends React.Component {
 	//Define constructor function to be able to define state
 	constructor() {
 		//Call super to be able to set state
 		super();
-		//Set the state object with one property animalList that
-		//by default will be assigned an empty array
-		this.state = {
-			breweriesList: []
-		}
+
+		// this.state = {
+		// 	breweriesList: []
+		// }
 		this.updateBreweriesList = this.updateBreweriesList.bind(this);
+	}
+
+	state = {
+		breweriesList: [],
+		hasList: false
 	}
 
 	updateBreweriesList(breweriesList) {
@@ -31,23 +37,14 @@ class App extends React.Component {
 		axios.get(`https://api.openbrewerydb.org/breweries?by_city=${city}`)
 		.then((res) => {
 			let data = res.data;
-			this.setState({ breweriesList: data })
+			this.setState({ breweriesList: data, hasList: true })
 			console.log(data)
 		})
-
 	}
-
-	// componentDidMount() {
-	// 	axios.get('/animals').then((data) => {
-	// 		this.updateAnimalList(data.data.data);
-	// 	})
-	// }
-
 	//Render jsx
 	render() {
 		return (
-			// Render AnimalList component with list prop equals to
-			//animalList state property
+
 			<div id='maincontainer'>
 				<div id="titlebox">
 					 <img id='logo' src="/logo.png" alt=""></img> 
@@ -60,7 +57,7 @@ class App extends React.Component {
 				</div>
 				<div>
 				<Slideshow />
-				{/* <AnimalList list={this.state.animalList} /> */}
+				{ this.state.hasList === false ? null : <BreweriesList breweriesList={this.state.breweriesList} /> }
 				</div>
 				<Footer />
 			</div>
@@ -69,3 +66,5 @@ class App extends React.Component {
 }
 
 export default App;
+
+// { this.state.breweriesList != [] && <BreweriesList breweries={this.state.breweriesList} /> }
