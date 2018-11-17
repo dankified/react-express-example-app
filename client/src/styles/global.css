@@ -10,7 +10,15 @@
 	justify-content: space-evenly;
 }
 
-img {
-	height: 200px;
-	width: 200px;
+h1 {
+	color: maroon;
+	text-align: center;
+	margin: 3rem 0;
+}
+header {
+	position: fixed;
+	top: 0;
+	margin: 30px 30px;
+	padding: 0 20px;
+	
 }

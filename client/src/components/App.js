@@ -1,7 +1,10 @@
 //Import dependencies
 import React from 'react';
-import AnimalList from './AnimalList';
+// import BreweriesList from '.BreweriesList';
+import Slideshow from './slideshow';
+// import SearchBar from './searchBar';
 import axios from 'axios';
+import SearchBar from "./searchBar.js";
 
 class App extends React.Component {
 	//Define constructor function to be able to define state
@@ -11,21 +14,33 @@ class App extends React.Component {
 		//Set the state object with one property animalList that
 		//by default will be assigned an empty array
 		this.state = {
-			animalList: []
+			breweriesList: []
 		}
-		this.updateAnimalList = this.updateAnimalList.bind(this);
+		this.updateBreweriesList = this.updateBreweriesList.bind(this);
 	}
 
-	updateAnimalList(animalList) {
-		console.log(animalList);
-		this.setState({animalList});
+	updateBreweriesList(breweriesList) {
+		console.log(breweriesList);
+		this.setState({breweriesList});
 	}
-	
-	componentDidMount() {
-		axios.get('/animals').then((data) => {
-			this.updateAnimalList(data.data.data);
+
+	handleSubmit = (e) => {
+		e.preventDefault();
+		const city = e.target.elements.city.value;
+		axios.get(`https://api.openbrewerydb.org/breweries?by_city=${city}`)
+		.then((res) => {
+			let data = res.data;
+			this.setState({ breweriesList: data })
+			console.log(data)
 		})
+
 	}
+
+	// componentDidMount() {
+	// 	axios.get('/animals').then((data) => {
+	// 		this.updateAnimalList(data.data.data);
+	// 	})
+	// }
 
 	//Render jsx
 	render() {
@@ -33,8 +48,9 @@ class App extends React.Component {
 			// Render AnimalList component with list prop equals to
 			//animalList state property
 			<div>
-				<h1>The Animal List App!</h1>
-				<AnimalList list={this.state.animalList} />
+				<SearchBar getBrews={this.handleSubmit} />
+				<Slideshow />
+				{/* <AnimalList list={this.state.animalList} /> */}
 			</div>
 		)
 	}
