@@ -1,7 +1,7 @@
 //Import dependencies
 import React from 'react';
 // import BreweriesList from '.BreweriesList';
-//import Slideshow from './slideshow';
+import Slideshow from './slideshow';
 // import SearchBar from './searchBar';
 import axios from 'axios';
 
@@ -35,7 +35,7 @@ class App extends React.Component {
 			// Render AnimalList component with list prop equals to
 			//animalList state property
 			<div>
-				
+				<Slideshow />
 				{/* <AnimalList list={this.state.animalList} /> */}
 			</div>
 		)
