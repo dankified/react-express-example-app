@@ -1,7 +1,7 @@
 //Import dependencies
 import React from 'react';
 // import BreweriesList from '.BreweriesList';
-//import Slideshow from './slideshow';
+import Slideshow from './slideshow';
 // import SearchBar from './searchBar';
 import axios from 'axios';
 import SearchBar from "./searchBar.js";
@@ -49,6 +49,7 @@ class App extends React.Component {
 			//animalList state property
 			<div>
 				<SearchBar getBrews={this.handleSubmit} />
+				<Slideshow />
 				{/* <AnimalList list={this.state.animalList} /> */}
 			</div>
 		)
