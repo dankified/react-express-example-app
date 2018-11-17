@@ -1,10 +1,12 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 
-class SearchBar extends React.Component {
-    render() {
-        return (
-            
-        )
-    }
+const SearchBar = (props) => {
+  return(
+    <form onSubmit={props.getBrews}>
+      <input name="city" placeholder="Beer is good!"></input>
+      <button>Submit</button>
+    </form>
+  )
 }
+
+export default SearchBar;
