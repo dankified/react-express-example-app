@@ -47,10 +47,22 @@ class App extends React.Component {
 		return (
 			// Render AnimalList component with list prop equals to
 			//animalList state property
-			<div>
+			<div id='maincontainer'>
+				<div id="titlebox">
+					<h1>
+						LocalBrew
+					</h1>
+				</div>
+				<div id='slogan'>
+					<h3>Find Your Local Brewery!</h3>
+				</div>
+				<div id='searchbox'>
 				<SearchBar getBrews={this.handleSubmit} />
+				</div>
+				<div>
 				<Slideshow />
 				{/* <AnimalList list={this.state.animalList} /> */}
+				</div>
 			</div>
 		)
 	}
