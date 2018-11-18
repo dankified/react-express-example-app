@@ -54,6 +54,9 @@ class App extends React.Component {
         <div id="searchbox">
           <SearchBar getBrews={this.handleSubmit} />
         </div>
+				<div>
+				<h3 id="featured" >This month's featured breweries.</h3>
+				</div>
         <div>
           <Slideshow id='slideshow' />
           {this.state.hasList === false ? null : <BreweriesList breweriesList={this.state.breweriesList} />}
