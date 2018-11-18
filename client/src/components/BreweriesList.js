@@ -6,7 +6,7 @@ const BreweriesList = (props) => {
   return(
     <Grid columns='equal' centered>
       {props.breweriesList.map((brewery, index) => {
-        return <Brewery key={index} brewery={brewery} />
+        return <Brewery className="brewcards" key={index} brewery={brewery} />
       })}
     </Grid>
   )

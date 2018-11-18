@@ -6,20 +6,16 @@ import React from 'react';
 
 const Footer =  () => {
      
-    return (
-        <footer id="footer" >
-            <div className="social-letter">
-                {/* <FontAwesomeIcon icon='facebook'/> */}
-                <i className="fab fa-facebook"></i>
-                <a href="http://twitter.com">
-                    <i className="fab fa-twitter fa-5x"></i>
-                </a>
-            </div>
-            <div className="visit">
-            </div>
-            <div className="calendar">                
-            </div>
-        </footer>)
+    return <footer id="footer">
+        <div id="socialnewsbox">
+          <div id="social">
+            <img src="" alt="facebookicon" />
+          </div>
+          <div id="newsletter" />
+        </div>
+        <div id="visit" />
+        <div id="calendar" />
+      </footer>;
 }
 
 export default Footer;
