@@ -5,6 +5,8 @@
 	font-family: 'Courier New', Courier, monospace;
 	
 }
+/* LocalBrewLogo section */
+
 #logo {
 	width: 30px;
 	height: 60px;
@@ -12,6 +14,7 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+/* Background image  */
 
 .parallax { 
     /* The image used */
@@ -25,6 +28,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+/* Edit the home and about navlinks at top left of page */
+.navlinks {
+	color: blue;
+	font-size: 1.2rem;
+	font-weight: bold;
+	
 }
 
 button {
@@ -47,7 +57,7 @@ input {
 
 
 #titlebox h1 {
-	color: rgb(216, 153, 17);
+	color:brown;
 	text-align: center;
 	/* margin: 5rem 0; */
 	padding-top: 2.5rem;	
@@ -56,10 +66,10 @@ input {
 #titlebox span {
 	font-size: 2.5rem;
 	font-weight: bold;
-	color: rgb(216, 153, 17);
+	color: #b26910;
 }
 #slogan h3 {
-	color: rgb(216, 153, 17);
+	color: #d17e12;
 	text-align: center;
 	/* margin: 5rem 0; */
 	padding-top: 2.5rem;	
@@ -124,18 +134,34 @@ header {
 #footerlogo img {
 	width: 12.5rem;
 	height: 7.5rem;
-	margin-top: .5rem;
-	
+	margin-top: .25rem;
+		
+}
+#footerlogo a{
+	margin-bottom: 3rem;
 }
 #footerlogo p {
 	margin: 0;
 	padding: 0;
+	text-shadow:
+		
+		
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+#wynlogo {
+	border-radius: 50%
 }
 
 .socialicons {
 	margin: 2rem 0 0 1rem;
 }
-
+#gitlogo {
+	width: 25px;
+	height: 25px;
+}
 
 .brewcards {
 	margin-top: 20px;
@@ -163,12 +189,22 @@ header {
 #slideshow {
 	margin-bottom: 25px;
 }
-#about {
+/* #aboutpage {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: space-between;
+} */
+
+
+#about {
+	
 	width: 60%;
-	margin: 5rem 0;
+	margin: 5rem 0 0 15rem;
+	align-content: center;
 	text-align: center;
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: black;
 }
 .carousel-inner>.item>a>img, .carousel-inner>.item>img {
     line-height: 1;
@@ -179,9 +215,14 @@ header {
 
 .carousel h3{
 	font-weight: bold;
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 .carousel p {
 	font-weight: bold;
-	font-size: 2rem;
+	font-size: 1.25rem;
 }
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+	display: none;
+}
+
+
