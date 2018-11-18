@@ -6,9 +6,9 @@ class Slideshow extends React.Component {
     render() {
         return <Carousel>
             <Carousel.Item>
-              <img width={900} height={500} alt="Concrete Beach Brewery" src="https://www.amicon.us/wp-content/uploads/2014/09/0000_Layer-21.jpg" />
+              <img width={900} height={500} className="image1" alt="Veza Sur Brewery" src="http://miamifoodpug.com/2017/09/veza-sur-brewing-co/veza-sur-veza-sur/" />
               <Carousel.Caption className="carousel">
-                <h3>Concrete Beach Brewery</h3>
+              <h3>Veza Sur Brewery</h3>
                 <p>
                   Huge space with a brewery, a taproom and an
                   indoor/outdoor bar pouring signature and seasonal
@@ -28,7 +28,7 @@ class Slideshow extends React.Component {
             </Carousel.Item>
             <Carousel.Item>
               <img width={900} height={500} alt="Funky Brewery" src="http://cmgpbpfeastpb.files.wordpress.com/2014/05/funkybuddha1.jpg" />
-            <Carousel.Caption className='carousel'>
+              <Carousel.Caption className="carousel">
                 <h3>Funky Buddha</h3>
                 <p>
                   Offering tours on weekends, this large craft brewery

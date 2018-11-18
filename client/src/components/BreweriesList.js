@@ -14,7 +14,7 @@ const BreweriesList = (props) => {
   return(
     <Grid columns='equal' centered>
       {props.breweriesList.map((brewery, index) => {
-        return <Brewery pic={randomPic} key={index} brewery={brewery} />
+        return <Brewery className="brewcards" pic={randomPic} key={index} brewery={brewery} />
       })}
     </Grid>
   )
