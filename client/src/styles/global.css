@@ -14,7 +14,7 @@
 .parallax { 
     /* The image used */
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a3/Wall_Food_10489_%2815825300172%29.jpg");
-
+	/* background-image: url('https://cdn.pixabay.com/photo/2015/07/10/17/53/cheers-839865_1280.jpg'); */
     /* Set a specific height */
     height: 500px; 
 
@@ -39,10 +39,6 @@ input {
 
 
 
-#animal-list {
-	display: flex;
-	justify-content: space-evenly;
-}
 
 #titlebox h1 {
 	color: rgb(216, 153, 17);
@@ -96,33 +92,11 @@ footer {
 	justify-content: space-around;
 	height: 100px;
 	background-color: black;
-	width: 100%
+	width: 100%;
+	margin-top: 100px;
 }
 
 
-/* .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-} */
-
-/* Add a hover effect if you want */
-/* .fa:hover {
-    opacity: 0.7;
+.brewcards {
+	margin-top: 20px;
 }
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-/* .fa-facebook {
-    background: #3B5998;
-    color: white;
-} */
-
-/* Twitter */
-/* .fa-twitter {
-    background: #55ACEE;
-    color: white;
-} */
