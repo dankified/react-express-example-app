@@ -2,9 +2,9 @@ import React from 'react';
 import { Card, Image, Grid } from 'semantic-ui-react';
 import Brewery from "./brewery.js";
 
-import  brew1 from './images/brew1.jpg'
-import  brew2 from './images/brew2.jpg'
-import  brew3 from './images/brew3.jpg'
+import  brew1 from '../styles/images/brew1.jpg'
+import  brew2 from '../styles/images/brew2.jpg'
+import  brew3 from '../styles/images/brew3.jpg'
 
 let pics = [brew1, brew2, brew3]
 
