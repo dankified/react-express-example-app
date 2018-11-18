@@ -3,7 +3,7 @@ import { Card, Image, Grid, Segment } from 'semantic-ui-react';
 
 const cards ={
   width:'300px',
-  height: '300px',
+  height: '325px',
   margin: '10px'
 }
 
@@ -12,7 +12,7 @@ const Brewery = (props) => (
     <Grid.Column>
       <Grid.Row>
   <Card style={cards}>
-    <Image src='https://www.maxpixel.net/static/photo/2x/Beer-Glass-Drink-3137819.jpg' />
+    <Image src={props.pic} alt="alt" />
     <Card.Content>
       <Card.Header>{props.brewery.name}</Card.Header>
       <Card.Meta>
@@ -20,7 +20,6 @@ const Brewery = (props) => (
         <span>{props.brewery.street}</span>
         <span>{props.brewery.city}</span>
         <span>{props.brewery.state}</span>
-        <span>{props.brewery.postal_code}</span>
       </Card.Meta>
       <Card.Description></Card.Description>
     </Card.Content>
