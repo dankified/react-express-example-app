@@ -3,12 +3,14 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Courier New', Courier, monospace;
+	
 }
 #logo {
-	width: 20%;
-	height: 10%;
+	width: 30px;
+	height: 60px;
 	margin-top: 2.5rem;
-	margin-left: 30rem;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .parallax { 
@@ -36,7 +38,11 @@ input {
 	padding: 2.5px;
 	margin-right: 10px;
 }
-
+#titlebox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 
 
@@ -45,6 +51,12 @@ input {
 	text-align: center;
 	/* margin: 5rem 0; */
 	padding-top: 2.5rem;	
+}
+
+#titlebox span {
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: rgb(216, 153, 17);
 }
 #slogan h3 {
 	color: rgb(216, 153, 17);
@@ -87,16 +99,81 @@ header {
 	margin-top: 2rem;
 }
 
-footer {
+#searchbox input {
+	margin-right: 1rem;
+}
+
+#footer {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
-	height: 100px;
+	height: 150px;
 	background-color: black;
 	width: 100%;
-	margin-top: 100px;
+	bottom: 0;	
+	margin-top: 2.5rem;
+	padding-bottom: 2rem;
+}
+
+#footerlogo{
+	color: pink;
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+
+#footerlogo img {
+	width: 12.5rem;
+	height: 7.5rem;
+	margin-top: .5rem;
+	
+}
+#footerlogo p {
+	margin: 0;
+	padding: 0;
+}
+
+.socialicons {
+	margin: 2rem 0 0 1rem;
 }
 
 
 .brewcards {
 	margin-top: 20px;
 }
+#newslettersignup {
+	margin: 2rem 0 2rem 1rem;
+}
+
+
+#newslettersignup input{
+	margin-right: 1rem;
+}
+
+#visit {
+	color: white;
+}
+#visit p {
+	margin: 0;
+	padding: 0;
+}
+#visit p:first-child {
+	margin-top: 1rem;
+}
+
+#slideshow {
+	margin-bottom: 25px;
+}
+#about {
+	display: flex;
+	justify-content: center;
+	width: 60%;
+	margin: 5rem 0;
+	text-align: center;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    line-height: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
