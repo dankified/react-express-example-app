@@ -27,7 +27,7 @@ const Footer =  () => {
           {/* <div id="newsletter" /> */}
           <Formspage />
         </div>
-        <VisitUs />
+        <VisitUs id='hidevisit'/>
 
         <div id="footerlogo">
           <p>Wyncode Academy</p>

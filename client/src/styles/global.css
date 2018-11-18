@@ -239,5 +239,21 @@ header {
 .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
 	display: none;
 }
+@media only screen and (max-device-width: 480px) {
 
+	#footerlogo img {
+		width: 5rem;
+		height: 5rem;
+		margin-left: 3.4rem;
+	}
+	#visit p{
+		display: none;
+	}
+    }
 
+#show {
+    display: block;
+}
+ #hide {
+    display: none;
+}
