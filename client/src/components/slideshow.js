@@ -1,14 +1,16 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 import { Carousel } from 'react-bootstrap';
 
 
 class Slideshow extends React.Component {
     render() {
-        return <Carousel>
+        return (
+      
+        <Carousel>
+          
             <Carousel.Item>
-              <img width={900} height={500} alt="Concrete Beach Brewery" src="https://www.amicon.us/wp-content/uploads/2014/09/0000_Layer-21.jpg" />
-              <Carousel.Caption class="carousel">
+              <img width={900} height={500} className="image1" alt="Concrete Beach Brewery" src="https://www.amicon.us/wp-content/uploads/2014/09/0000_Layer-21.jpg" />
+              <Carousel.Caption className="carousel">
                 <h3>Concrete Beach Brewery</h3>
                 <p>
                   Huge space with a brewery, a taproom and an
@@ -19,7 +21,7 @@ class Slideshow extends React.Component {
             </Carousel.Item>
             <Carousel.Item>
               <img width={900} height={500} alt="Proof Brewery" src="https://media-cdn.tripadvisor.com/media/photo-o/06/4c/be/a2/proof-brewing-company.jpg" />
-              <Carousel.Caption class="carousel">
+              <Carousel.Caption className="carousel">
                 <h3>Proof Brewery</h3>
                 <p>
                   Proof Brewing Company is Tallahassee’s First and
@@ -29,7 +31,7 @@ class Slideshow extends React.Component {
             </Carousel.Item>
             <Carousel.Item>
               <img width={900} height={500} alt="Funky Brewery" src="http://cmgpbpfeastpb.files.wordpress.com/2014/05/funkybuddha1.jpg" />
-            <Carousel.Caption class='carousel'>
+            <Carousel.Caption className='carousel'>
                 <h3>Funky Buddha</h3>
                 <p>
                   Offering tours on weekends, this large craft brewery
@@ -37,7 +39,9 @@ class Slideshow extends React.Component {
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
-          </Carousel>;
+          </Carousel>    
+          
+        )
     }
 }
 export default Slideshow;
