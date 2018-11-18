@@ -31,7 +31,7 @@
 }
 /* Edit the home and about navlinks at top left of page */
 .navlinks {
-	color: blue;
+	color: black;
 	font-size: 1.2rem;
 	font-weight: bold;
 	
@@ -73,6 +73,13 @@ input {
 	text-align: center;
 	/* margin: 5rem 0; */
 	padding-top: 2.5rem;	
+}
+#featured {
+	color: #b26910;
+	padding-top: 2.5rem;
+}
+#featured h3 {
+	font-weight: bold;
 }
 
 .carousel {
@@ -143,13 +150,7 @@ header {
 #footerlogo p {
 	margin: 0;
 	padding: 0;
-	text-shadow:
-		
-		
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
+	
 }
 #wynlogo {
 	border-radius: 50%
@@ -185,6 +186,10 @@ header {
 #visit p:first-child {
 	margin-top: 1rem;
 }
+#empty {
+	height: 310px;
+	padding-bottom: 1.5rem;
+}
 
 #slideshow {
 	margin-bottom: 25px;
@@ -203,9 +208,19 @@ header {
 	align-content: center;
 	text-align: center;
 	font-weight: bold;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	color: black;
 }
+#aboutcontainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+#aboutcontainer p {
+	font-size: 1.5rem;
+}
+
 .carousel-inner>.item>a>img, .carousel-inner>.item>img {
     line-height: 1;
     margin-left: auto;
