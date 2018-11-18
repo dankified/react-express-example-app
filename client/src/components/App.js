@@ -28,43 +28,45 @@ class App extends React.Component {
 
 	updateBreweriesList(breweriesList) {
 		console.log(breweriesList);
-		this.setState({breweriesList});
+		this.setState({ breweriesList });
 	}
 
 	handleSubmit = (e) => {
 		e.preventDefault();
 		const city = e.target.elements.city.value;
 		axios.get(`https://api.openbrewerydb.org/breweries?by_city=${city}`)
-		.then((res) => {
-			let data = res.data;
-			this.setState({ breweriesList: data, hasList: true })
-			console.log(data)
-		})
+			.then((res) => {
+				let data = res.data;
+				this.setState({ breweriesList: data, hasList: true })
+				console.log(data)
+			})
 	}
 	//Render jsx
 	render() {
-		return (
-
-			<div id='maincontainer'>
-				<div id="titlebox">
-					 <img id='logo' src="/logo.png" alt=""></img> 
-				</div>
-				<div id='slogan'>
-					<h3>Find Your Local Brewery!</h3>
-				</div>
-				<div id='searchbox'>
-				<SearchBar getBrews={this.handleSubmit} />
-				</div>
-				<div>
-				<Slideshow />
-				{ this.state.hasList === false ? null : <BreweriesList breweriesList={this.state.breweriesList} /> }
-				</div>
-				<Footer />
-			</div>
-		)
+		return <div id="maincontainer">
+        <div id="titlebox">
+          <img id="logo" src="/beerBottle.png" alt="" />
+		  <span>LocalBrew</span>
+        </div>
+        <div id="slogan">
+          <h3>Find Your Local Brewery!</h3>
+        </div>
+        <div id="searchbox">
+          <SearchBar getBrews={this.handleSubmit} />
+        </div>
+        <div>
+          <Slideshow id='slideshow' />
+          {this.state.hasList === false ? null : <BreweriesList breweriesList={this.state.breweriesList} />}
+        </div>
+        <div id='footer' >
+          <Footer />
+        </div>
+      </div>;
 	}
 }
 
 export default App;
+
+// TODO!!  make the city search box also scroll the page down to the card section
 
 // { this.state.breweriesList != [] && <BreweriesList breweries={this.state.breweriesList} /> }

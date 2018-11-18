@@ -4,9 +4,12 @@ import { Carousel } from 'react-bootstrap';
 
 class Slideshow extends React.Component {
     render() {
-        return <Carousel>
+        return (
+      
+        <Carousel>
+          
             <Carousel.Item>
-              <img width={900} height={500} alt="Concrete Beach Brewery" src="https://www.amicon.us/wp-content/uploads/2014/09/0000_Layer-21.jpg" />
+              <img width={900} height={500} className="image1" alt="Concrete Beach Brewery" src="https://www.amicon.us/wp-content/uploads/2014/09/0000_Layer-21.jpg" />
               <Carousel.Caption className="carousel">
                 <h3>Concrete Beach Brewery</h3>
                 <p>
@@ -36,7 +39,9 @@ class Slideshow extends React.Component {
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
-          </Carousel>;
+          </Carousel>    
+          
+        )
     }
 }
 export default Slideshow;
