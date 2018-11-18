@@ -4,6 +4,7 @@ import App from './components/App';
 import About from './components/About';
 import './styles/global.css';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
+import Footer from './components/footer.js'
 // import 'semantic-ui-css/semantic.min.css';
 
 class Root extends React.Component {
@@ -17,6 +18,7 @@ class Root extends React.Component {
 					</header>
 					<Route exact path="/" component={ App } />
 					<Route path="/about" component={ About } />
+					
 				</div>
 			</BrowserRouter>
 		)
