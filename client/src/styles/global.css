@@ -3,14 +3,257 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Courier New', Courier, monospace;
+	
 }
+/* LocalBrewLogo section */
 
-#animal-list {
+#logo {
+	width: 30px;
+	height: 60px;
+	margin-top: 2.5rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Background image  */
+
+.parallax { 
+    /* The image used */
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a3/Wall_Food_10489_%2815825300172%29.jpg");
+	/* background-image: url('https://cdn.pixabay.com/photo/2015/07/10/17/53/cheers-839865_1280.jpg'); */
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Edit the home and about navlinks at top left of page */
+.navlinks {
+	color: black;
+	font-size: 1.2rem;
+	font-weight: bold;
+	
+}
+/* Title box section */
+button {
+	padding: .35rem;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	
+}
+input {
+	padding: 2.5px;
+	margin-right: 10px;
+}
+#titlebox {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
+	align-items: center;
 }
 
-img {
-	height: 200px;
-	width: 200px;
+
+
+#titlebox h1 {
+	color:brown;
+	text-align: center;
+	/* margin: 5rem 0; */
+	padding-top: 2.5rem;	
+}
+
+#titlebox span {
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #b26910;
+}
+#slogan h3 {
+	color: #d17e12;
+	text-align: center;
+	/* margin: 5rem 0; */
+	padding-top: 2.5rem;	
+}
+#featured {
+	color: #b26910;
+	padding-top: 2.5rem;
+}
+#featured h3 {
+	font-weight: bold;
+}
+
+.carousel {
+	margin: 40px 0;
+}
+
+.carousel h3, p {
+	/* color: rgb(216, 153, 17); */
+	text-align: center;
+}
+.carousel p {
+	font-weight: bold;
+	font-size: 1.1rem;
+	/* color: white; */
+	
+}
+
+
+header {
+	position: fixed;
+	top: 0;
+	margin: .5rem .5rem;
+	padding: 0;
+}
+#maincontainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* margin-top: 3rem; */
+}
+
+#searchbox{
+	margin-top: 2rem;
+}
+
+#searchbox input {
+	margin-right: 1rem;
+}
+
+#footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 150px;
+	background-color: black;
+	width: 100%;
+	bottom: 0;	
+	margin-top: 2.5rem;
+	padding-bottom: 2rem;
+}
+
+#footerlogo{
+	color: pink;
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+
+#footerlogo img {
+	width: 12.5rem;
+	height: 7.5rem;
+	margin-top: .25rem;
+		
+}
+#footerlogo a{
+	margin-bottom: 3rem;
+}
+#footerlogo p {
+	margin: 0;
+	padding: 0;
+	
+}
+#wynlogo {
+	border-radius: 50%
+}
+
+.socialicons {
+	margin: 2rem 0 0 1rem;
+}
+#gitlogo {
+	width: 25px;
+	height: 25px;
+}
+
+.brewcards {
+	margin-top: 20px;
+}
+#newslettersignup {
+	margin: 2rem 0 2rem 1rem;
+}
+
+
+#newslettersignup input{
+	margin-right: 1rem;
+}
+
+#visit {
+	color: white;
+}
+#visit p {
+	margin: 0;
+	padding: 0;
+}
+#visit p:first-child {
+	margin-top: 1rem;
+}
+#empty {
+	height: 310px;
+	padding-bottom: 1.5rem;
+}
+
+#slideshow {
+	margin-bottom: 25px;
+}
+/* #aboutpage {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+} */
+
+
+#about {
+	
+	width: 60%;
+	margin: 5rem 0 0 15rem;
+	align-content: center;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.25rem;
+	color: black;
+}
+#aboutcontainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+#aboutcontainer p {
+	font-size: 1.5rem;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    line-height: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.carousel h3{
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+.carousel p {
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+	display: none;
+}
+@media only screen and (max-device-width: 480px) {
+
+	#footerlogo img {
+		width: 5rem;
+		height: 5rem;
+		margin-left: 3.4rem;
+	}
+	#visit p{
+		display: none;
+	}
+    }
+
+#show {
+    display: block;
+}
+ #hide {
+    display: none;
 }
