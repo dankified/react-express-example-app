@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Image, Grid } from 'semantic-ui-react';
+import { Grid } from 'semantic-ui-react';
+//Card, Image,
 import Brewery from "./brewery.js";
 
 import  brew1 from '../styles/images/brew1.jpg'
