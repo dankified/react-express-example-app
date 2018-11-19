@@ -3,7 +3,7 @@ import { Card, Image, Grid, } from 'semantic-ui-react';
 // Segment
 const cards ={
   width:'300px',
-  height: '350px',
+  height: '385px',
 
   margin: '10px'
 }
