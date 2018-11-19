@@ -10,7 +10,7 @@ class AgeVerification extends React.Component {
     }
 
     verifyNo = () => {
-        window.location.href = 'https://www.disney.com/';
+        window.location.href = "https://wyncode.co";
     }
 
   render() {
