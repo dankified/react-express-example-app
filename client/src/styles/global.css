@@ -2,9 +2,11 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Courier New', Courier, monospace;
+	font-family: 'Cinzel', serif;
 	
 }
+/* LocalBrewLogo section */
+
 #logo {
 	width: 30px;
 	height: 60px;
@@ -12,12 +14,12 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+/* Background image  */
 
 .parallax { 
-    /* The image used */
+   
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a3/Wall_Food_10489_%2815825300172%29.jpg");
-	/* background-image: url('https://cdn.pixabay.com/photo/2015/07/10/17/53/cheers-839865_1280.jpg'); */
-    /* Set a specific height */
+	
     height: 500px; 
 
     /* Create the parallax scrolling effect */
@@ -26,7 +28,26 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* Edit the home and about navlinks at top left of page */
+.navlinks {
+	color: black;
+	font-size: 1.2rem;
+	font-weight: bold;
+	
+}
 
+header {
+	position: fixed;
+	top: 0;
+	margin: .5rem .5rem;
+	padding: 0;
+}
+/* Title box section and button/form */
+#titlebox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 button {
 	padding: .35rem;
 	border-radius: 50%;
@@ -38,55 +59,56 @@ input {
 	padding: 2.5px;
 	margin-right: 10px;
 }
-#titlebox {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 
 
 #titlebox h1 {
-	color: rgb(216, 153, 17);
+	color:brown;
 	text-align: center;
 	/* margin: 5rem 0; */
 	padding-top: 2.5rem;	
 }
-
+/*  Logo */
 #titlebox span {
 	font-size: 2.5rem;
 	font-weight: bold;
-	color: rgb(216, 153, 17);
+	color: #b26910;
 }
+/* Slogan */
+
 #slogan h3 {
-	color: rgb(216, 153, 17);
+	color: #d17e12;
 	text-align: center;
 	/* margin: 5rem 0; */
 	padding-top: 2.5rem;	
 }
+/* Feature beer of the month */
+#featured {
+	color: #b26910;
+	padding-top: 2.5rem;
+}
+#featured h3 {
+	font-weight: bold;
+}
+/* Begin carousel section */
 
 .carousel {
 	margin: 40px 0;
 }
 
-.carousel h3, p {
-	/* color: rgb(216, 153, 17); */
-	text-align: center;
+
+/* Hide carousel next button */
+.glyphicon .glyphicon-chevron-right {
+	display: none;
 }
-.carousel p {
-	font-weight: bold;
-	font-size: 1.1rem;
-	/* color: white; */
-	
+.glyphicon-chevron-right:before {
+    display: none;
+}
+.glyphicon-chevron-left:before {
+    display: none;
 }
 
+/*Main Flexbox */
 
-header {
-	position: fixed;
-	top: 0;
-	margin: .5rem .5rem;
-	padding: 0;
-}
 #maincontainer {
 	display: flex;
 	flex-direction: column;
@@ -95,6 +117,7 @@ header {
 	/* margin-top: 3rem; */
 }
 
+/* Searchbox */
 #searchbox{
 	margin-top: 2rem;
 }
@@ -102,7 +125,7 @@ header {
 #searchbox input {
 	margin-right: 1rem;
 }
-
+/* Footer */
 #footer {
 	display: flex;
 	flex-direction: row;
@@ -124,18 +147,30 @@ header {
 #footerlogo img {
 	width: 12.5rem;
 	height: 7.5rem;
-	margin-top: .5rem;
-	
+	margin-top: .25rem;
+		
+}
+#footerlogo a{
+	margin-bottom: 3rem;
 }
 #footerlogo p {
 	margin: 0;
 	padding: 0;
+	color: pink;
+
+	
+}
+#wynlogo {
+	border-radius: 50%
 }
 
 .socialicons {
 	margin: 2rem 0 0 1rem;
 }
-
+#gitlogo {
+	width: 25px;
+	height: 25px;
+}
 
 .brewcards {
 	margin-top: 20px;
@@ -155,21 +190,46 @@ header {
 #visit p {
 	margin: 0;
 	padding: 0;
+	color: yellow;
 }
 #visit p:first-child {
 	margin-top: 1rem;
+}
+#empty {
+	height: 310px;
+	padding-bottom: 1.5rem;
 }
 
 #slideshow {
 	margin-bottom: 25px;
 }
-#about {
+/* #aboutpage {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: space-between;
+} */
+
+
+#about {
+
 	width: 60%;
-	margin: 5rem 0;
+	margin: 5rem 0 0 15rem;
+	align-content: center;
 	text-align: center;
+	font-weight: bold;
+	font-size: 1.25rem;
+	color: black;
 }
+#aboutcontainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+#aboutcontainer p {
+	font-size: 1.5rem;
+}
+
 .carousel-inner>.item>a>img, .carousel-inner>.item>img {
     line-height: 1;
     margin-left: auto;
@@ -177,3 +237,45 @@ header {
 }
 
 
+.carousel h3{
+	font-weight: bold;
+	font-size: 1.5rem;
+	font-weight: 900;
+	text-align: center;
+}
+.carousel p {
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-align: center;
+	
+}
+
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+	display: none;
+}
+@media only screen and (max-device-width: 480px) {
+
+	#footerlogo img {
+		width: 5rem;
+		height: 5rem;
+		margin-left: 3.4rem;
+	}
+	#footerlogo p {
+		margin-left: 3rem;
+	}
+	#visit p{
+		display: none;
+	}
+    }
+
+#show {
+    display: block;
+}
+ #hide {
+    display: none;
+}
+#cardimages {
+	height: 200.23px;
+	width: 300px;
+}

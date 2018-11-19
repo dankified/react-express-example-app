@@ -37,7 +37,7 @@ class App extends React.Component {
 		axios.get(`https://api.openbrewerydb.org/breweries?by_city=${city}`)
 			.then((res) => {
 				let data = res.data;
-				this.setState({ breweriesList: data, hasList: true })
+				this.setState({ breweriesList: data, hasList: true }, document.getElementById('button').scrollIntoView())
 				console.log(data)
 			})
 	}
