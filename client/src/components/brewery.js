@@ -37,7 +37,8 @@ class Brewery extends React.Component {
          <span>{this.props.brewery.website_url}</span><br/>
          <span>{this.props.brewery.street}</span>
          <span>{this.props.brewery.city}</span>
-         <span>{this.props.brewery.state}</span>
+         <span>{this.props.brewery.state}</span><br />
+         <span>{this.props.brewery.phone}</span>
          {/* <span>{this.props.brewery.postal_code}</span> */}
        </Card.Meta>
        <Card.Description></Card.Description>
