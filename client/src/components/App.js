@@ -63,11 +63,12 @@ class App extends React.Component {
 					</div>
 					<div>
 						<Slideshow id='slideshow' />
-						{this.state.hasList === false ? null : <BreweriesList breweriesList={this.state.breweriesList} />}
+						<div id='button'>
+							{this.state.hasList === false ? null : <BreweriesList breweriesList={this.state.breweriesList} />}
+
+						</div>
 					</div>
-					<div id='footer' >
-						<Footer />
-					</div>
+					<Footer />
 				</div>
 			</div>
 

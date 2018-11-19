@@ -21,9 +21,7 @@ const ContainerExampleAlignment = () => (
       </p>
 		</Container>
 		<div id="empty"></div>
-		<div id='footer' >
-			<Footer />
-		</div>
+		<Footer />
 
 	</div>
 )

@@ -130,7 +130,6 @@ input {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	height: 150px;
 	background-color: black;
 	width: 100%;
 	bottom: 0;	
@@ -196,7 +195,7 @@ input {
 	margin-top: 1rem;
 }
 #empty {
-	height: 310px;
+	height: 355px;
 	padding-bottom: 1.5rem;
 }
 
