@@ -1,9 +1,0 @@
-import React from "react";
-import Popup from "reactjs-popup";
-
-export default () => (
-  <Popup trigger={<button> you must be 21 or older to use this site as part of our commitment to
-responsible drinking.</button>} position="right center">
-    <div>Thank you for acknowledging that you are at least 21!!</div>
-  </Popup>
-);
