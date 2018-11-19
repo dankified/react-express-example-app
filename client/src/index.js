@@ -1,10 +1,10 @@
-//Import dependencies
 import React from 'react';
 import {render} from 'react-dom';
 import App from './components/App';
 import About from './components/About';
 import './styles/global.css';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
+// import 'semantic-ui-css/semantic.min.css';
 
 class Root extends React.Component {
 	render() {
@@ -12,7 +12,7 @@ class Root extends React.Component {
 			<BrowserRouter>
 				<div>
 					<header>
-						<Link to="/">Home</Link>
+						<Link to="/">Home  </Link>
 						<Link to="/about">About</Link>
 					</header>
 					<Route exact path="/" component={ App } />
