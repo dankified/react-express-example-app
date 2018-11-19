@@ -29,7 +29,7 @@ class Brewery extends React.Component {
      <Grid.Column>
        <Grid.Row>
    <Card onClick={this.toggleVisibility} style={cards}>
-   <Image src={this.props.pic} alt="alt" />
+   <Image id='cardimages' src={this.props.pic} alt="alt" />
      <Card.Content>
        <Card.Header>{this.props.brewery.name}</Card.Header>
        <p id="butts">Brewery Type: {this.props.brewery.brewery_type}</p>
