@@ -261,6 +261,9 @@ input {
 		height: 5rem;
 		margin-left: 3.4rem;
 	}
+	#footerlogo p {
+		margin-left: 3rem;
+	}
 	#visit p{
 		display: none;
 	}
@@ -271,4 +274,8 @@ input {
 }
  #hide {
     display: none;
+}
+#cardimages {
+	height: 200.23px;
+	width: 300px;
 }
