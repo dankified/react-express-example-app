@@ -6,6 +6,7 @@ import Slideshow from './slideshow';
 import axios from 'axios';
 import SearchBar from "./searchBar.js";
 import Footer from "./footer.js"
+import Dropdown from './dropdown'; 
 
 import BreweriesList from './BreweriesList.js';
 
@@ -48,6 +49,9 @@ class App extends React.Component {
           <img id="logo" src="/beerBottle.png" alt="" />
 		  <span>LocalBrew</span>
         </div>
+		<div id='dropitlow'>
+		<Dropdown />
+		</div>
         <div id="slogan">
           <h3>Find Your Local Brewery!</h3>
         </div>
