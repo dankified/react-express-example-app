@@ -1,6 +1,5 @@
 import React from 'react';
-import { Dropdowns, MenuItem, ButtonToolbar, DropdownButton } from 'react-bootstrap';
-import { Link } from 'react-router-dom'
+import { MenuItem, ButtonToolbar, DropdownButton } from 'react-bootstrap';
 
 
 const Button = () => {
