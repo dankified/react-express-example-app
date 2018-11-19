@@ -19,6 +19,10 @@
     "@fortawesome/react-fontawesome": "^0.1.3",
     "axios": "^0.18.0",
     "express": "^4.16.4",
+<<<<<<< HEAD
+    "reactjs-popup": "^1.3.1"
+=======
     "react-bootstrap": "^0.32.4"
+>>>>>>> 0e9dacfbc2a23ed6a9b13112da6f3571caf8e3a7
   }
 }

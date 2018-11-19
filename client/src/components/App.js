@@ -1,11 +1,14 @@
 //Import dependencies
 import React from 'react';
+
 // import BreweriesList from '.BreweriesList';
 import Slideshow from './slideshow';
 // import SearchBar from './searchBar';
 import axios from 'axios';
 import SearchBar from "./searchBar.js";
-import Footer from "./footer.js"
+import Footer from "./footer.js";
+import { Modal, Button, Grid, Row, Col } from "react-bootstrap";
+
 
 import BreweriesList from './BreweriesList.js';
 
@@ -14,16 +17,13 @@ class App extends React.Component {
 	constructor() {
 		//Call super to be able to set state
 		super();
-
-		// this.state = {
-		// 	breweriesList: []
-		// }
 		this.updateBreweriesList = this.updateBreweriesList.bind(this);
 	}
 
 	state = {
 		breweriesList: [],
-		hasList: false
+		hasList: false,
+		showVerification: true
 	}
 
 	updateBreweriesList(breweriesList) {
@@ -41,32 +41,61 @@ class App extends React.Component {
 				console.log(data)
 			})
 	}
+
+	verifyYes = () => {
+		this.setState( { showVerification: false } )
+	}
+
+	verifyNo = () => {
+		window.location.href = 'https://www.disney.com/';
+	}
+
 	//Render jsx
 	render() {
-		return <div id="maincontainer">
-        <div id="titlebox">
-          <img id="logo" src="/beerBottle.png" alt="" />
-		  <span>LocalBrew</span>
-        </div>
-        <div id="slogan">
-          <h3>Find Your Local Brewery!</h3>
-        </div>
-        <div id="searchbox">
-          <SearchBar getBrews={this.handleSubmit} />
-        </div>
-				<div>
-				<h3 id="featured" >This month's featured breweries.</h3>
-				</div>
-        <div>
-          <Slideshow id='slideshow' />
-				<div id="button">
+		return (
+
+			<div>
+				<Grid>
+			    <Modal show={this.state.showVerification} onHide={this.handleClose} backdrop="static">
+						<Modal.Header>Please verify your Age</Modal.Header>
+						<Modal.Body>
+							<h1>Are you over 21?</h1>
+							  <Row className="show-grid">
+							    <Col xs={6}>
+										<Button block onClick={this.verifyYes}>Yes, let me in.</Button>
+							    </Col>
+							    <Col xs={6}>
+										<Button block onClick={this.verifyNo}>No. I want my mommy.</Button>
+							    </Col>
+							  </Row>
+						</Modal.Body>
+			    </Modal>
+				</Grid>
+
+
+				<div id="maincontainer">
+					<div id="titlebox">
+						<img id="logo" src="/beerBottle.png" alt="" />
+						<span>LocalBrew</span>
+					</div>
+					<div id="slogan">
+						<h3>Find Your Local Brewery!</h3>
+					</div>
+					<div id="searchbox">
+						<SearchBar getBrews={this.handleSubmit} />
+					</div>
+					<div>
+						<Slideshow id='slideshow' />
 						{this.state.hasList === false ? null : <BreweriesList breweriesList={this.state.breweriesList} />}
 					</div>
-        </div>
-        <div id='footer' >
-          <Footer />
-        </div>
-      </div>;
+					<div id='footer' >
+						<Footer />
+					</div>
+				</div>
+			</div>
+
+		)
+
 	}
 }
 
