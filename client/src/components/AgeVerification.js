@@ -25,7 +25,7 @@ class AgeVerification extends React.Component {
                               <Button block onClick={this.verifyYes}>Yes, let me in.</Button>
                           </Col>
                           <Col xs={6}>
-                              <Button block onClick={this.verifyNo}>No. I want my mommy.</Button>
+                              <Button block onClick={this.verifyNo}>No. Send me away.</Button>
                           </Col>
                       </Row>
                   </Modal.Body>
