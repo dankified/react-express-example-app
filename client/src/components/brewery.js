@@ -1,6 +1,6 @@
 import React from 'react'
-import { Card, Image, Grid, Segment } from 'semantic-ui-react';
-
+import { Card, Image, Grid, } from 'semantic-ui-react';
+// Segment
 const cards ={
   width:'300px',
   height: '350px',
