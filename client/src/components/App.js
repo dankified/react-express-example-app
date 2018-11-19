@@ -7,10 +7,8 @@ import Slideshow from './slideshow';
 import axios from 'axios';
 import SearchBar from "./searchBar.js";
 import Footer from "./footer.js";
-import { Modal, Button, Grid, Row, Col } from "react-bootstrap";
-
-
 import BreweriesList from './BreweriesList.js';
+import AgeVerification from './AgeVerification';
 
 class App extends React.Component {
 	//Define constructor function to be able to define state
@@ -41,36 +39,15 @@ class App extends React.Component {
 				console.log(data)
 			})
 	}
-
-	verifyYes = () => {
-		this.setState( { showVerification: false } )
+	showModal = () => {
+		this.setState({showVerification: false})
 	}
-
-	verifyNo = () => {
-		window.location.href = 'https://www.disney.com/';
-	}
-
 	//Render jsx
 	render() {
 		return (
 
 			<div>
-				<Grid>
-			    <Modal show={this.state.showVerification} onHide={this.handleClose} backdrop="static">
-						<Modal.Header>Please verify your Age</Modal.Header>
-						<Modal.Body>
-							<h1>Are you over 21?</h1>
-							  <Row className="show-grid">
-							    <Col xs={6}>
-										<Button block onClick={this.verifyYes}>Yes, let me in.</Button>
-							    </Col>
-							    <Col xs={6}>
-										<Button block onClick={this.verifyNo}>No. I want my mommy.</Button>
-							    </Col>
-							  </Row>
-						</Modal.Body>
-			    </Modal>
-				</Grid>
+				<AgeVerification show={this.state.showVerification} showModal={this.showModal}/>
 
 
 				<div id="maincontainer">

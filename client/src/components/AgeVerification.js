@@ -1,32 +1,36 @@
-import React from 'react'
-import { render } from 'react-dom'
-import {Modal, Button} from 'react-bootstrap'
+import React from 'react';
+import { Modal, Button, Grid, Row, Col } from "react-bootstrap";
 
-import MessageBox from 'react-message-box'
+
 
 
 class AgeVerification extends React.Component {
-  showAlert() {
-      this.refs.messageBox.alert("Alert", "This is alert!").ok(() => {
-          console.log("Alert ok!");
-      });
-  }
+    verifyYes = () => {
+        this.props.showModal();
+    }
 
-  showConfirm() {
-      this.refs.messageBox.confirm("Confirm", "This is confirm!").ok(() => {
-          console.log("Confirm ok!");
-      }).cancle(() => {
-          console.log("Confirm cancle!");
-      });
-  }
+    verifyNo = () => {
+        window.location.href = 'https://www.disney.com/';
+    }
 
   render() {
       return (
-          <div>
-              <Button onClick={this.showAlert.bind(this)}>Alert Box</Button>
-              <Button onClick={this.showConfirm.bind(this)}>Confirm Box</Button>
-              <MessageBox ref="messageBox"/>
-          </div>
+          <Grid>
+              <Modal show={this.props.show} onHide={this.handleClose} backdrop="static">
+                  <Modal.Header>Please verify your Age</Modal.Header>
+                  <Modal.Body>
+                      <h1>Are you over 21?</h1>
+                      <Row className="show-grid">
+                          <Col xs={6}>
+                              <Button block onClick={this.verifyYes}>Yes, let me in.</Button>
+                          </Col>
+                          <Col xs={6}>
+                              <Button block onClick={this.verifyNo}>No. I want my mommy.</Button>
+                          </Col>
+                      </Row>
+                  </Modal.Body>
+              </Modal>
+          </Grid>
       );
   }
 }
