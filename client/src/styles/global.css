@@ -1,109 +1,121 @@
-*, ::after, ::before {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: 'Cinzel', serif;
-	
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
 }
+
 /* LocalBrewLogo section */
 
 #logo {
-	width: 30px;
-	height: 60px;
-	margin-top: 2.5rem;
-	margin-left: auto;
-	margin-right: auto;
+    width: 30px;
+    height: 60px;
+    margin-top: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 /* Background image  */
 
-.parallax { 
-   
+.parallax {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a3/Wall_Food_10489_%2815825300172%29.jpg");
-	
-    height: 500px; 
-
+    height: 500px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /* Edit the home and about navlinks at top left of page */
+
 .navlinks {
-	color: black;
-	font-size: 1.2rem;
-	font-weight: bold;
-	margin-left: 1rem;
-	
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 1rem;
 }
 
 header {
-	position: fixed;
-	top: 0;
-	margin: .5rem .5rem;
-	padding: 0;
-}
-/* Title box section and button/form */
-#titlebox {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-button {
-	padding: .35rem;
-	border-radius: 50%;
-	border: none;
-	outline: none;
-	
-}
-input {
-	padding: 2.5px;
-	margin-right: 10px;
+    position: fixed;
+    top: 0;
+    margin: .5rem .5rem;
+    padding: 0;
 }
 
+/* Title box section and button/form */
+
+#titlebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: .35rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+input {
+    padding: 2.5px;
+    margin-right: 10px;
+}
 
 #titlebox h1 {
-	color:brown;
-	text-align: center;
-	/* margin: 5rem 0; */
-	padding-top: 2.5rem;	
+    color: brown;
+    text-align: center;
+    /* margin: 5rem 0; */
+    padding-top: 2.5rem;
 }
+
 /*  Logo */
+
 #titlebox span {
-	font-size: 2.5rem;
-	font-weight: bold;
-	color: #b26910;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #b26910;
 }
+
 /* Slogan */
 
 #slogan h3 {
-	color: #d17e12;
-	text-align: center;
-	/* margin: 5rem 0; */
-	padding-top: 2.5rem;	
+    color: #d17e12;
+    text-align: center;
+    /* margin: 5rem 0; */
+    padding-top: 2.5rem;
 }
+
 /* Feature beer of the month */
+
 #featured {
-	color: #b26910;
-	padding-top: 2.5rem;
+    color: #b26910;
+    padding-top: 2.5rem;
 }
+
 #featured h3 {
-	font-weight: bold;
+    font-weight: bold;
 }
+
 /* Begin carousel section */
 
 .carousel {
-	margin: 40px 0;
+    margin: 40px 0;
 }
-
 
 /* Hide carousel next button */
+
 .glyphicon .glyphicon-chevron-right {
-	display: none;
+    display: none;
 }
+
 .glyphicon-chevron-right:before {
     display: none;
 }
+
 .glyphicon-chevron-left:before {
     display: none;
 }
@@ -111,275 +123,292 @@ input {
 /*Main Flexbox */
 
 #maincontainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	/* margin-top: 3rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 3rem; */
 }
 
 /* Searchbox */
-#searchbox{
-	margin-top: 2rem;
+
+#searchbox {
+    margin-top: 2rem;
 }
 
 #searchbox input {
-	margin-right: 1rem;
-}
-/* Footer */
-#footer {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	background-color: black;
-	width: 100%;
-	bottom: 0;	
-	margin-top: 2.5rem;
-	padding-bottom: 2rem;
-	
+    margin-right: 1rem;
 }
 
-#logo{
-	color: pink;
-	font-weight: bold;
-	font-size: 1.4rem;
+/* Footer */
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    margin-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+#logo {
+    color: pink;
+    font-weight: bold;
+    font-size: 1.4rem;
 }
 
 #footerlogo img {
-	width: 12.5rem;
-	height: 7.5rem;
-	margin-top: .25rem;
-	margin-left: 1.1rem;
-	
-		
+    width: 12.5rem;
+    height: 7.5rem;
+    margin-top: .25rem;
+    margin-left: 1.1rem;
 }
-#footerlogo a{
-	margin-bottom: 3rem;
+
+#footerlogo a {
+    margin-bottom: 3rem;
 }
+
 #footerlogo p {
-	margin-top: 1rem;
-	color: pink;
-	margin-left: 1.8rem;
-	font-weight: bold;
+    margin-top: 1rem;
+    color: pink;
+    margin-left: 1.8rem;
+    font-weight: bold;
 }
+
 #footerlogo p {
-	
-	padding: 0;
-	color: pink;	
+    padding: 0;
+    color: pink;
 }
 
 #wynlogo {
-	border-radius: 50%
+    border-radius: 50%
 }
 
 .socialicons {
-	margin: 2rem 0 0 1rem;
+    margin: 2rem 0 0 1rem;
 }
+
 #gitlogo {
-	width: 25px;
-	height: 25px;
+    width: 25px;
+    height: 25px;
 }
 
 .brewcards {
-	margin-top: 20px;
+    margin-top: 20px;
 }
+
 #newslettersignup {
-	margin: 2rem 0 2rem 1rem;
+    margin: 2rem 0 2rem 1rem;
 }
 
-
-#newslettersignup input{
-	margin-right: 1rem;
+#newslettersignup input {
+    margin-right: 1rem;
 }
 
 #visit {
-	color: white;
-	text-align: center;
+    color: white;
+    text-align: center;
 }
+
 #visit p {
-	margin: 0;
-	padding: 0;
-	color: yellow;
-	/* font-size: 1rem; */
+    margin: 0;
+    padding: 0;
+    color: yellow;
+    /* font-size: 1rem; */
 }
+
 #visit p:first-child {
-	margin-top: 1rem;
+    margin-top: 1rem;
 }
+
 #empty {
-	height: 25.5rem;
-	padding-bottom: 1.5rem;
+    height: 25.5rem;
+    padding-bottom: 1.5rem;
 }
+
 /*  */
 
 #aboutp {
-	margin-top: 5rem;
+    margin-top: 5rem;
 }
 
 #slideshow {
-	margin-bottom: 25px;
+    margin-bottom: 25px;
 }
+
 /* #aboutpage {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 } */
 
-
 #about {
-
-	width: 60%;
-	margin: 5rem 0 0 15rem;
-	align-content: center;
-	text-align: center;
-	font-weight: bold;
-	/* font-size: 1.25rem; */
-	color: black;
+    width: 60%;
+    margin: 5rem 0 0 15rem;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    /* font-size: 1.25rem; */
+    color: black;
 }
-#aboutcontainer{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 
+#aboutcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 #aboutcontainer p {
-	font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
-.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img {
     line-height: 1;
     margin-left: auto;
     margin-right: auto;
 }
 
-
-.carousel h3{
-	font-weight: bold;
-	font-size: 1.5rem;
-	font-weight: 900;
-	text-align: center;
+.carousel h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
 }
+
 .carousel p {
-	font-weight: bold;
-	font-size: 1.4rem;
-	text-align: center;
-	
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
 }
 
-
-.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
-	display: none;
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next,
+.carousel-control .icon-prev {
+    display: none;
 }
-@media only screen and (max-device-width: 480px) {
-
-	#footerlogo img {
-		width: 5rem;
-		height: 5rem;
-		margin-left: 3.2rem;
-	}
-	.carousel h3 {
-		display: none;
-	}
-	.carousel p {
-		display: none;
-	}
-	#footerlogo p {
-		margin-left: 3rem;
-	}
-	#visit p{
-		display: none;
-	}
-	#dropdownButton{
-		display: none;
-	}
-	#modalbody h1{
-	color: white;
-	border: 1px solid black;
-	background-color: black;
-	width: 16rem;	
-	}
-	#socialnewsbox {
-		margin-left: 1rem;
-	}
-	}
-	@media only screen and (max-device-width: 330px) {
-
-	#footerlogo img {
-		width: 4rem;
-		height: 4rem;
-		margin-left: 3rem;
-	}
-	#footerlogo p {
-		margin-left: 3rem;
-		margin-top: 2.5rem;
-		font-size: .75rem;
-		color: pink;
-	}
-	#visit p{
-		display: none;
-	}
-	#dropdownButton{
-		display: none;
-	}
-	#modalbody h1{
-	color: white;
-	border: 1px solid black;
-	background-color: black;
-	width: 8rem;
-	margin-left: auto;
-	margin-right: auto;
-	}
-	#socialnewsbox {
-		margin-left: 1rem;
-	}
-	.footerabout {
-		font-size: 12px;
-		color: yellow !important;
-
-	}
-	
-    }
 
 #show {
     display: block;
 }
- #hide {
+
+#hide {
     display: none;
 }
+
 #cardimages {
-	height: 200.23px;
+    height: 200.23px;
 	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Drop down Menu */
+
 #dropdownButton {
-	position:absolute;
-    top:1rem;
+    position: absolute;
+    top: 1rem;
     left: 3.25rem;
 }
+
 /* Age Verification */
-#modalheader{
-	text-align: center;
-	background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a3/Wall_Food_10489_%2815825300172%29.jpg');
-	font-weight: bold;
 
-}
-#modalbody{
-	text-align: center;
-	background-size: 100%;
-	background-image: url('https://leopolicastro.github.io/basic/agebackground.png')
+#modalheader {
+    text-align: center;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a3/Wall_Food_10489_%2815825300172%29.jpg');
+    font-weight: bold;
 }
 
-#modalbody span{
-	color: white;
-	border: 1px solid black;
-	background-color: black;
-	width: 16rem;
-	margin-left: 0rem;
-	margin-bottom: .5rem;
+#modalbody {
+    text-align: center;
+    background-size: 100%;
+    background-image: url('https://leopolicastro.github.io/basic/agebackground.png')
 }
-#modalbody button{
-	margin-top: 1rem;
+
+#modalbody span {
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    width: 16rem;
+    margin-left: 0rem;
+    margin-bottom: .5rem;
 }
+
+#modalbody button {
+    margin-top: 1rem;
+}
+
 #citysearch {
-	text-align: center;
+    text-align: center;
+}
+
+@media only screen and (max-device-width: 480px) {
+    #footerlogo img {
+        width: 5rem;
+        height: 5rem;
+        margin-left: 3.2rem;
+    }
+    .carousel h3 {
+        display: none;
+    }
+    .carousel p {
+        display: none;
+    }
+    #footerlogo p {
+        margin-left: 3rem;
+    }
+    #visit p {
+        display: none;
+    }
+    #dropdownButton {
+        display: none;
+    }
+    #modalbody h1 {
+        color: white;
+        border: 1px solid black;
+        background-color: black;
+        width: 16rem;
+    }
+    #socialnewsbox {
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (max-device-width: 330px) {
+    #footerlogo img {
+        width: 4rem;
+        height: 4rem;
+        margin-left: 3rem;
+    }
+    #footerlogo p {
+        margin-left: 3rem;
+        margin-top: 2.5rem;
+        font-size: .75rem;
+        color: pink;
+    }
+    #visit p {
+        display: none;
+    }
+    #dropdownButton {
+        display: none;
+    }
+    #modalbody h1 {
+        color: white;
+        border: 1px solid black;
+        background-color: black;
+        width: 8rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #socialnewsbox {
+        margin-left: 1rem;
+    }
+    .footerabout {
+        font-size: 12px;
+        color: yellow !important;
+    }
+    
 }
