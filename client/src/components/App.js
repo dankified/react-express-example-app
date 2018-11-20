@@ -56,13 +56,14 @@ class App extends React.Component {
 				<AgeVerification show={this.state.showVerification} showModal={this.showModal}/>
 
 				<div id="maincontainer">
+					<div id="dropdownButton">
+						<Button />
+					</div>
 					<div id="titlebox">
 						<img id="logo" src="/beerBottle.png" alt="" />
 						<span>LocalBrew</span>
 					</div>
-					<div id="dropdownButton">
-					<Button /> 
-					</div>
+					
 					<div id="slogan">
 						<h3>Find Your Local Brewery!</h3>
 					</div>
