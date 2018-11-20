@@ -190,13 +190,17 @@ input {
 	margin: 0;
 	padding: 0;
 	color: yellow;
+	/* font-size: 1rem; */
 }
 #visit p:first-child {
 	margin-top: 1rem;
 }
 #empty {
-	height: 355px;
+	height: 25.5rem;
 	padding-bottom: 1.5rem;
+}
+#aboutp {
+	margin-top: 5rem;
 }
 
 #slideshow {
@@ -216,7 +220,7 @@ input {
 	align-content: center;
 	text-align: center;
 	font-weight: bold;
-	font-size: 1.25rem;
+	/* font-size: 1.25rem; */
 	color: black;
 }
 #aboutcontainer{
@@ -277,4 +281,11 @@ input {
 #cardimages {
 	height: 200.23px;
 	width: 300px;
+}
+
+/* Drop down Menu */
+#dropdownButton {
+	position:absolute;
+    top:1rem;
+    right: 1rem;
 }
