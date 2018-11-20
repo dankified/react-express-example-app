@@ -3,8 +3,8 @@ import React from 'react';
 const SearchBar = (props) => {
   return (
     <form onSubmit={props.getBrews}>
-      <input name="city" placeholder="Beer is good!"></input>
-      <button>Submit</button>
+      <input id='citysearch'name="city" placeholder="City Name"></input>
+      <button>Search</button>
     </form>
   )
 }

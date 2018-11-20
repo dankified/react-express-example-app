@@ -14,24 +14,28 @@ class AgeVerification extends React.Component {
     }
 
   render() {
-      return (
+      return <div id="modal">
           <Grid>
-              <Modal show={this.props.show} onHide={this.handleClose} backdrop="static">
-                  <Modal.Header>Please verify your Age</Modal.Header>
-                  <Modal.Body>
-                      <h1>Are you over 21?</h1>
-                      <Row className="show-grid">
-                          <Col xs={6}>
-                              <Button block onClick={this.verifyYes}>Yes, let me in.</Button>
-                          </Col>
-                          <Col xs={6}>
-                              <Button block onClick={this.verifyNo}>No. Send me away.</Button>
-                          </Col>
-                      </Row>
-                  </Modal.Body>
-              </Modal>
+            <Modal show={this.props.show} onHide={this.handleClose} backdrop="static">
+              <Modal.Header id='modalheader'>Please verify your Age</Modal.Header>
+              <Modal.Body id='modalbody'>
+                <span>Are you over 21?</span>
+                <Row className="show-grid">
+                  <Col xs={6}>
+                    <Button block onClick={this.verifyYes}>
+                      Beer Me!
+                    </Button>
+                  </Col>
+                  <Col xs={6}>
+                    <Button block onClick={this.verifyNo}>
+                      I'll Wait.
+                    </Button>
+                  </Col>
+                </Row>
+              </Modal.Body>
+            </Modal>
           </Grid>
-      );
+        </div>;
   }
 }
 

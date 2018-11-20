@@ -4,7 +4,7 @@ import { MenuItem, ButtonToolbar, DropdownButton } from 'react-bootstrap';
 
 const Button = () => {
     return <ButtonToolbar>
-        <DropdownButton bsSize="small" title="LocalBrewCrew" id="dropdown-size-small">
+        <DropdownButton bsSize="small" title="Learn More" id="dropdown-size-small">
           <MenuItem eventKey="1" href="https://localbrew.herokuapp.com/" rel="noopener noreferrer">
             Home
           </MenuItem>
