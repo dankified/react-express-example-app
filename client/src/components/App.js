@@ -8,13 +8,12 @@ import axios from 'axios';
 import SearchBar from "./searchBar.js";
 
 
-import Button from './dropdown'; 
-
 
 import Footer from "./footer.js";
 
 import BreweriesList from './BreweriesList.js';
 import AgeVerification from './AgeVerification';
+import Button from './dropdown';
 
 class App extends React.Component {
 	//Define constructor function to be able to define state
@@ -60,6 +59,9 @@ class App extends React.Component {
 					<div id="titlebox">
 						<img id="logo" src="/beerBottle.png" alt="" />
 						<span>LocalBrew</span>
+					</div>
+					<div id="dropdownButton">
+					<Button /> 
 					</div>
 					<div id="slogan">
 						<h3>Find Your Local Brewery!</h3>
