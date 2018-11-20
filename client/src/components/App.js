@@ -6,7 +6,11 @@ import Slideshow from './slideshow';
 // import SearchBar from './searchBar';
 import axios from 'axios';
 import SearchBar from "./searchBar.js";
+
+
+
 import Footer from "./footer.js";
+
 import BreweriesList from './BreweriesList.js';
 import AgeVerification from './AgeVerification';
 import Button from './dropdown';
@@ -45,11 +49,11 @@ class App extends React.Component {
 	}
 	//Render jsx
 	render() {
+
 		return (
 
 			<div>
 				<AgeVerification show={this.state.showVerification} showModal={this.showModal}/>
-
 
 				<div id="maincontainer">
 					<div id="titlebox">
