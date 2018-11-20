@@ -157,12 +157,14 @@ input {
 }
 #footerlogo p {
 	margin-top: 1rem;
+	color: pink;
+	margin-left: 1.8rem;
 }
-/* #footerlogo p {
-	margin: 0;
+#footerlogo p {
+	
 	padding: 0;
 	color: pink;	
-} */
+}
 
 #wynlogo {
 	border-radius: 50%
@@ -270,7 +272,7 @@ input {
 	#footerlogo img {
 		width: 5rem;
 		height: 5rem;
-		margin-left: 3.4rem;
+		margin-left: 3.2rem;
 	}
 	.carousel h3 {
 		display: none;
@@ -308,6 +310,7 @@ input {
 		margin-left: 3rem;
 		margin-top: 2.5rem;
 		font-size: .75rem;
+		color: pink;
 	}
 	#visit p{
 		display: none;
