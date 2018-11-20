@@ -150,6 +150,7 @@ input {
 	height: 7.5rem;
 	margin-top: .25rem;
 	margin-left: 1.1rem;
+	
 		
 }
 #footerlogo a{
@@ -159,6 +160,7 @@ input {
 	margin-top: 1rem;
 	color: pink;
 	margin-left: 1.8rem;
+	font-weight: bold;
 }
 #footerlogo p {
 	
