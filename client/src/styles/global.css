@@ -33,6 +33,7 @@
 	color: black;
 	font-size: 1.2rem;
 	font-weight: bold;
+	margin-left: 1rem;
 	
 }
 
@@ -147,18 +148,21 @@ input {
 	width: 12.5rem;
 	height: 7.5rem;
 	margin-top: .25rem;
+	margin-left: 1.1rem;
 		
 }
 #footerlogo a{
 	margin-bottom: 3rem;
 }
 #footerlogo p {
+	margin-top: 1rem;
+}
+/* #footerlogo p {
 	margin: 0;
 	padding: 0;
-	color: pink;
+	color: pink;	
+} */
 
-	
-}
 #wynlogo {
 	border-radius: 50%
 }
@@ -185,6 +189,7 @@ input {
 
 #visit {
 	color: white;
+	text-align: center;
 }
 #visit p {
 	margin: 0;
@@ -199,6 +204,8 @@ input {
 	height: 25.5rem;
 	padding-bottom: 1.5rem;
 }
+/*  */
+
 #aboutp {
 	margin-top: 5rem;
 }
@@ -264,12 +271,66 @@ input {
 		height: 5rem;
 		margin-left: 3.4rem;
 	}
+	.carousel h3 {
+		display: none;
+	}
+	.carousel p {
+		display: none;
+	}
 	#footerlogo p {
 		margin-left: 3rem;
 	}
 	#visit p{
 		display: none;
 	}
+	#dropdownButton{
+		display: none;
+	}
+	#modalbody h1{
+	color: white;
+	border: 1px solid black;
+	background-color: black;
+	width: 16rem;	
+	}
+	#socialnewsbox {
+		margin-left: 1rem;
+	}
+	}
+	@media only screen and (max-device-width: 330px) {
+
+	#footerlogo img {
+		width: 4rem;
+		height: 4rem;
+		margin-left: 3rem;
+	}
+	#footerlogo p {
+		margin-left: 3rem;
+		margin-top: 2.5rem;
+		font-size: .75rem;
+	}
+	#visit p{
+		display: none;
+	}
+	#dropdownButton{
+		display: none;
+	}
+	#modalbody h1{
+	color: white;
+	border: 1px solid black;
+	background-color: black;
+	width: 8rem;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	#socialnewsbox {
+		margin-left: 1rem;
+	}
+	.footerabout {
+		font-size: 12px;
+		color: yellow !important;
+
+	}
+	
     }
 
 #show {
@@ -287,5 +348,32 @@ input {
 #dropdownButton {
 	position:absolute;
     top:1rem;
-    right: 1rem;
+    left: 3.25rem;
+}
+/* Age Verification */
+#modalheader{
+	text-align: center;
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a3/Wall_Food_10489_%2815825300172%29.jpg');
+	font-weight: bold;
+
+}
+#modalbody{
+	text-align: center;
+	background-size: 100%;
+	background-image: url('https://leopolicastro.github.io/basic/agebackground.png')
+}
+
+#modalbody span{
+	color: white;
+	border: 1px solid black;
+	background-color: black;
+	width: 16rem;
+	margin-left: 0rem;
+	margin-bottom: .5rem;
+}
+#modalbody button{
+	margin-top: 1rem;
+}
+#citysearch {
+	text-align: center;
 }

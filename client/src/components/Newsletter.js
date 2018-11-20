@@ -6,8 +6,8 @@ class FormsPage extends React.Component {
         return (
             <div id='newslettersignup'>
                 <form>
-                    <input name="city" placeholder="Newsletter"></input>
-                    <button>Submit</button>
+                    <input name="city" placeholder="Join Our Newsletter"></input>
+                    <button>Sign Up</button>
                 </form>
 
             </div>)

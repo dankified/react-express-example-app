@@ -30,4 +30,4 @@ const ContainerExampleAlignment = () => (
   </div>
 );
 
-export default ContainerExampleAlignment
+export default ContainerExampleAlignment;
