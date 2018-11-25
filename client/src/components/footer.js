@@ -21,7 +21,7 @@ const Footer =  () => {
               <img className="socialicons" src="https://leopolicastro.github.io/basic/if_twitter_28313.png" alt="twittericon" />
             </a>
             <a href="https://github.com/wyncode" target="_blank" rel="noopener noreferrer">
-              <img className="socialicons" id="gitlogo" src="https://leopolicastro.github.io/basic/Screen%20Shot%202018-11-18%20at%2011.34.21%20AM.png" alt="githubicon" />
+              <img className="socialicons" id="gitlogo" src="https://leopolicastro.github.io/basic/githublogo.png" alt="githubicon" />
             </a>
           </div>
           {/* <div id="newsletter" /> */}
