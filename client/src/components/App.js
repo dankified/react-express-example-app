@@ -2,19 +2,16 @@
 import React from 'react';
 
 // import BreweriesList from '.BreweriesList';
-import Slideshow from './slideshow';
+import Carousel from './Carousel';
 // import SearchBar from './searchBar';
 import axios from 'axios';
 import SearchBar from "./searchBar.js";
-
-
 
 import Footer from "./footer.js";
 
 import BreweriesList from './BreweriesList.js';
 import AgeVerification from './AgeVerification';
-import Button from './dropdown';
-
+import Navbar from './Navbar'
 class App extends React.Component {
 	//Define constructor function to be able to define state
 	constructor() {
@@ -53,12 +50,11 @@ class App extends React.Component {
 		return (
 
 			<div>
-				<AgeVerification show={this.state.showVerification} showModal={this.showModal}/>
-
+				{/* <AgeVerification show={this.state.showVerification} showModal={this.showModal}/> */}
+        < Navbar / >
 				<div id="maincontainer">
-					<div id="dropdownButton">
-						<Button />
-					</div>
+        
+				
 					<div id="titlebox">
 						<img id="logo" src="/beerBottle.png" alt="" />
 						<span>LocalBrew</span>
@@ -70,15 +66,18 @@ class App extends React.Component {
 					<div id="searchbox">
 						<SearchBar getBrews={this.handleSubmit} />
 					</div>
-					<div>
-						<Slideshow id='slideshow' />
+					< div className ='.car-box' >
+						<Carousel />
+            </ div>
+            <div>
 						<div id='button'>
 							{this.state.hasList === false ? null : <BreweriesList breweriesList={this.state.breweriesList} />}
 
 						</div>
 					</div>
-					<Footer />
+					
 				</div>
+        < Footer / >
 			</div>
 
 		)

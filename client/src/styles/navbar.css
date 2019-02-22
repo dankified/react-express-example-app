@@ -1,0 +1,25 @@
+.white {
+  color: white !important;
+}
+
+.twitter {
+  color: #1dcaff;
+}
+
+.linkedin {
+  color: #0077B5
+}
+
+.nav-font {
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.carousel ::after{
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
